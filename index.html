@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cv Nicolás Fontanini</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- inicio navegador -->
+      <div class="navegador">
+        <nav>
+          <a href="#inicio">Inicio</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contactame</a>
+        </nav>
+      </div>
+      <!-- fin navegador -->
+
+      <!-- titulo y datos personales   -->
+      <div class="titulo-datos">
+        <div>
+          <h1>
+            Nicolás <br />
+            Fontanini
+          </h1>
+          <p>Desarrollador Web</p>
+        </div>
+        <div>
+          <h2>
+            Parana, Entre Rios <br />
+            Argentina
+          </h2>
+          <p>
+            <i class="bi bi-telephone-fill"> </i>+54 3435033365 <br />
+            <i class="bi bi-envelope-fill"></i> anicolasfontanini@gmail.com
+            <br />
+            <i class="bi bi-github"></i> github.com/Nicofontanini
+          </p>
+        </div>
+      </div>
+      <!-- fin de titulo y datos personales -->
+    </header>
+
+    <hr />
+
+    <main>
+      <!-- inicio acerca de mi y educacion -->
+      <section>
+        <div class="container-acer">
+          <div class="contenedor-acercademi">
+            <h3>Acerca de mi</h3>
+            <p>
+              ¡Hola! Soy desarrollador web Junior en busca de mi primera
+              oportunidad laboral. Soy un apasionado por el desarrollo web, con
+              habilidades en HTML, CSS, JavaScript, Bootstrap, GitHub y Sass. Me
+              encanta aprender y mejorar continuamente para llevar mi trabajo al
+              siguiente nivel.
+            </p>
+
+            <p>
+              Tengo conocimientos en Node.js, Webpack y NPM, lo que me permite
+              abordar proyectos de JavaScript. Además, cuento con experiencia en
+              diseño utilizando Figma, que se unen con mi experiencia como
+              editor de video de mas de 6 años con el paquete Adobe, lo que me
+              habilita para crear interfaces de usuario funcionales y
+              atractivas.
+            </p>
+
+            <p>
+              Actualmente estoy aprendiendo nuevas tecnologías, como ReactJS y
+              Firebase, para poder mejorar aún más mis habilidades en el
+              desarrollo web.
+            </p>
+
+          <hr />
+
+          <section class="contenedorgeneraleducacion">
+            <div class="contenedor-logos">
+              <div class="logo">
+                <img src="Imagenes/html_color.png" alt="logo_html" />
+              </div>
+              <div class="logo">
+                <img src="Imagenes/logo_css.png" alt="logo_css" />
+              </div>
+              <div class="logo">
+                <img src="Imagenes/logo_javascript.png" alt="logo_javascript" />
+              </div>
+              <div class="logo">
+                <img src="Imagenes/logo_boostrap.png" alt="logo_boostrap" />
+              </div>
+              <div class="logo">
+                <img src="Imagenes/logo_sass.png" alt="logo_sass" />
+              </div>
+              <div class="logo">
+                <img src="Imagenes/logo_github.png" alt="logo_github" />
+              </div>
+              <div class="logo">
+                <img src="Imagenes/logo_figma.png" alt="logo_figma" />
+              </div>
+              <div class="logo">
+                <img src="Imagenes/Logo_nodejs.png" alt="Logo_nodejs" />
+              </div>
+              <div class="logo">
+                <img src="Imagenes/logo_webpack.png" alt="logo_webpack" />
+              </div>
+              <div class="logo">
+                <img src="Imagenes/logo_npm.png" alt="logo_npm" />
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="contenedor-educacion">
+          <div class="contenedor-fotocv">
+            <img src="Imagenes/fotocv.jpg" alt="foto cv" />
+          </div>
+          <div class="detalle-edu">
+            <h3>Educacion</h3>
+            <h4>OpenBootcamp</h4>
+            <p>
+              Html, Css, JavaScript, <br />
+              GitHub, React, Nodejs, <br />
+              Webpack, Npm, Figma.
+            </p>
+            <h4>UTN</h4>
+            <p>Desarrollo Web.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- fin de acerca de mi y educacion -->
+
+    <hr />
+
+    <!-- inicio proyectos -->
+    <a name="proyectos"></a>
+    <section class="proyectos">
+      <h4>Proyectos</h4>
+      <div class="logos_proyectos">
+        <a href="https://sitiowebtemid.netlify.app" target="_blank"
+          ><img src="/Imagenes/Logo_temid.jpg" alt="logotemid"
+        /></a>
+        <a
+          ><img
+            src="/Imagenes/Logo_internetsatelital.png"
+            alt="logointernetsatelital"
+        /></a>
+      </div>
+    </section>
+    <!-- fin proyectos -->
+
+    <hr />
+
+    <!-- inicio formulario -->
+    <div class="container">
+      <h2>Contactame</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Escriba su correo electrónico" required>
+  
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Escriba su número de teléfono">
+  
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje" required></textarea>
+  
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+    <!-- fin formulario -->
+
+    <hr />
+
+    <!-- inicio footer -->
+    <footer>
+      <div class="contenedor-redes">
+        <h3>Redes Sociales</h3>
+        <div class="redes">
+          <a><i class="bi bi-instagram"></i>Instragram</a>
+          <a><i class="bi bi-facebook"></i>Facebook</a>
+          <a><i class="bi bi-linkedin"></i>Linkedin</a>
+        </div>
+        <h4>Todos los derechos reservados Nicofontaninidev 2023</h4>
+      </div>
+    </footer>
+    <!-- fin footer -->
+
+    <!-- inicio lluvia de iconos -->
+    <div class="logosdelluvia hidden">
+      <img src="Imagenes/logo_javascript.png" style="width: 50px" />
+    </div>
+    <div class="logosdelluvia hidden">
+      <img src="Imagenes/logo_boostrap.png" style="width: 50px" />
+    </div>
+    <div class="logosdelluvia hidden">
+      <img src="Imagenes/logo_github.png" style="width: 50px" />
+    </div>
+    <div class="logosdelluvia hidden">
+      <img src="Imagenes/logo_css.png" style="width: 50px" />
+    </div>
+    <div class="logosdelluvia hidden">
+      <img src="Imagenes/logo_sass.png" style="width: 50px" />
+    </div>
+    <div class="logosdelluvia hidden">
+      <img src="Imagenes/html_color.png" style="width: 50px" />
+    </div>
+    <div class="logosdelluvia hidden">
+      <img src="Imagenes/logo_figma.png" style="width: 50px" />
+    </div>
+    <div class="logosdelluvia hidden">
+      <img src="Imagenes/Logo_nodejs.png" style="width: 50px" />
+    </div>
+    <div class="logosdelluvia hidden">
+      <img src="Imagenes/logo_npm.png" style="width: 50px" />
+    </div>
+    <div class="logosdelluvia hidden">
+      <img src="Imagenes/logo_webpack.png" style="width: 50px" />
+    </div>
+ 
+    <!-- fin lluvia de iconos -->
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+

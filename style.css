@@ -1,0 +1,355 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ece9e9;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  overflow-x: hidden;
+}
+
+/* diseño responsivo */
+
+@media (max-width: 768px) {
+  body {
+    align-items: center;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegador nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30%;
+  }
+
+  .titulo-datos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div .detalle-edu h3 {
+    font-size: 100%;
+  }
+
+  .detalle-edu h4 {
+    font-size: 70%;
+    font-weight: 600;
+  }
+
+  .container-acer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10%;
+  }
+
+  .contenedor-fotocv img {
+    width: 95%;
+    margin-bottom: 5%;
+  }
+
+  .contenedor-logos img {
+    width: 90%;
+  }
+
+  .logos_proyectos img {
+    width: 80%;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  .logosdelluvia {
+    display: none;
+  }
+}
+
+/* Estilos para pantallas con ancho entre 769px y 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegador nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-fotocv img {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+
+  .contenedor-logos img {
+    width: 70%;
+  }
+
+  .logos_proyectos img {
+    width: 50%;
+  }
+
+  .formulario input,
+  textarea {
+    width: 80%;
+  }
+
+  .formulario button {
+    width: 50%;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+hr {
+  margin: 0% 3% 0% 3%;
+  border-width: 2px;
+  padding: 10px;
+}
+
+/* estilos navegador */
+.navegador nav {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.navegador nav a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+/* estilos titulo y datos personales */
+.titulo-datos {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 3% 0% 3%;
+}
+
+.titulo-datos h2 {
+  font-weight: bold;
+  font-size: large;
+}
+
+.titulo-datos h1 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+/* contenedor acerca de mi y foto */
+.container-acer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 0% 3% 0% 3%;
+}
+
+.container-acer h3 {
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.detalle-edu h3 {
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+
+section .contenedor-fotocv img {
+  width: 80%;
+  transform: scaleX(-1);
+  filter: grayscale(80%);
+  margin-bottom: 8%;
+}
+
+.contenedor-educacion img {
+  width: 3%;
+  height: 5%;
+  background: transparent;
+}
+
+.contenedor-acercademi {
+  text-align: left;
+}
+
+.contenedorgeneraleducacion {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+/* contenedor skills */
+
+.contenedor-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4% 0%;
+}
+
+.contenedor-logos .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-logos img {
+  width: 70%;
+  height: auto;
+  transition: filter 0.1s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.contenedor-logos img:hover {
+  filter: grayscale(0%);
+}
+
+/* estilos proyectos */
+
+.proyectos h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.logos_proyectos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+  margin: 2% 0% 2% 0%;
+  align-items: center;
+}
+
+.logos_proyectos img {
+  width: 100px;
+}
+
+.tituloproyectos {
+  text-align: center;
+}
+
+.todos-los-proyectos {
+  padding-top: 2%;
+}
+
+/* estilos formulario */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  padding: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #ece9e9;
+  font-weight: 600;
+  color: black;
+}
+
+/* estilos footer */
+
+.contenedor-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+footer .redes i {
+  margin: 10px;
+}
+
+.contenedor-redes h3 {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.contenedor-redes h4 {
+  font-size: 10px;
+  margin: 10px;
+}
+
+/* estilo lluvia de iconos */
+.lluvia {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.logosdelluvia {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  opacity: 0.3;
+  animation: caida 10s linear infinite, difuminar 10s linear 1 forwards;
+}
+
+@keyframes caida {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes difuminar {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
